@@ -9,7 +9,7 @@ export default function NavBar({user}) {
         <h1>THE GREAT MOVIE APP!</h1>
         <nav>
             <ul>
-                <li><Link to = "/movies/5">All Movies</Link></li>
+                <li><Link to = "/movies">All Movies</Link></li>
                 <li><Link to = "/actors">All Actors</Link></li>
                 <li><b>Welcome, {user}!</b></li>
 

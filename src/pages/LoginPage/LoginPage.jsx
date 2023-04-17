@@ -9,9 +9,9 @@ export default function LoginPage({setUser}) {
 
   return (
     <div className="loginBox">
-        <div>LoginPage</div>
-        <input id = "username" type="text" placeholder="username" />
-        <button onClick={handleLogin}>Login</button>
+        <h2>Enter your username: </h2>
+        <input id = "username" style = {{width: "50%"}} type="text" placeholder="username" />
+        <button onClick={handleLogin} style = {{width: "50%"}}>Login</button>
     </div>
     
   )
