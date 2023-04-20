@@ -9,7 +9,7 @@ export default function MovieBlock({movie}) {
             <p>Star Actor/Actress: {movie.cast[0]}</p>
         </div>
         
-        <img src={movie.posterPath} alt="" />
+        <img id = "moviePoster" src={movie.posterPath} alt="" />
     </div>
   )
 }

@@ -73,7 +73,11 @@ a {
 
 }
 
-.movieBlock img {
+.movieBlock:hover #moviePoster {
+  opacity: 0.3;
+}
+
+#moviePoster {
   z-index: 0;
   left: 0;
   top: -50px;
@@ -81,6 +85,7 @@ a {
   opacity: 0.1;
   width: auto;
   position: absolute;
+  transition: all 400ms ease-in-out;
 }
 
 .actors {
@@ -91,4 +96,44 @@ a {
   align-items: center;
   gap: 20px;
   font-weight: 400;
+}
+
+.actorContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#actorBlock {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 0;
+  height: 10vh;
+  width: 20vw;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: rgb(69,227,158);
+  background: linear-gradient(121deg, rgba(69,227,158,1) 0%, rgba(32,148,126,0) 100%);
+  box-shadow: 0px 0px 10px white;
+  position: relative;
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+}
+
+#actorBlock:hover {
+  transform: scale(103%)
+}
+
+#actorBlock p {
+  z-index: 100;
+  margin-left: 30%;
+  margin-top: 7%;
+}
+
+#actorBlock img {
+  opacity: 0.4;
+  position: absolute;
+  transform: scale(305%);
+  object-fit: cover;
 }
